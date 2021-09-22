@@ -1,26 +1,27 @@
+const ship = document.querySelector('.ship');
+const move = 5;
 
-let square = document.querySelector('.ship');
-let moveBy = 5;
+// SETS POSITION OF THE SPACE SHIP AND ALLOWS IT TO MOVE
 window.addEventListener('load', () => {
-    square.style.position = 'absolute';
-    square.style.top = 0;
-    square.style.left = 0;
-  
+    ship.style.position = 'absolute';
+    ship.style.top = 0;
+    ship.style.left = 0;
 });
+
+// SETS IMPUTS TO MOVE AROUND SHIP
 window.addEventListener('keydown', (e) => {
     switch (e.key) {
-        case 'ArrowUp':
-            square.style.top = parseInt(square.style.top) - moveBy + 'px'
+        case 'w':
+            ship.style.top = parseInt(ship.style.top) - move + 'px' // UP
             break;
-        case 'ArrowDown':
-            square.style.top = parseInt(square.style.top) + moveBy + 'px'
+        case 's':
+            ship.style.top = parseInt(ship.style.top) + move + 'px'  // DOWN
             break;
-        case 'ArrowLeft':
-            square.style.left = parseInt(square.style.left) - moveBy + 'px'
+        case 'a':
+            ship.style.left = parseInt(ship.style.left) - move + 'px' // LEFT
             break;
-        case 'ArrowRight':
-            square.style.left = parseInt(square.style.left) + moveBy + 'px'
+        case 'd':
+            ship.style.left = parseInt(ship.style.left) + move + 'px' // RIGHT
             break;
-      
     }
 });
