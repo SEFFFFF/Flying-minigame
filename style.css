@@ -10,13 +10,13 @@ body {
 .space {
     width: 80vw;
     height: 100vh;
+    background-image: url("background_1.png");
     background-color: black;
 }
 
 .ship {
-    width: 30px;
-    height: 30px;
-    background-color: white;
+    width: 25px;
+    height: 37px;
     position: relative;
 }
 
@@ -29,6 +29,13 @@ body {
     z-index: 5;
     border-left:  3px solid white;
     color: white;
+    font-family: lores-12, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.sidebar img {
+    margin-bottom: 100px;
 }
 
 .sidebar p {
@@ -52,6 +59,7 @@ body {
     border: 3px solid white;
     color: white;
     font-size: 1.5em;
+    margin-top: 100px;
 }
 
 .button:hover {
